@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <style>
+    
+    </style>
+    <h1 style="color: rgb(0, 174, 255); text-align: center;">Car World</h1>
+    <div class="cars" style="color: rgb(0, 174, 255); width: 100%; height: 350px;  display: flex; position: relative; justify-content: center; justify-content: space-evenly;">
+        <div class="d1" style="color: rgb(0, 174, 255);width: 400px; height: 300px;   border: 2px solid black; text-align: center; align-items: center;">
+            <h3>enter details</h3>
+            
+                    
+                  <input style="width:350px margin"  type="text" class="form-control" id="carbrand" placeholder="car brand" aria-describedby="emailHelp">
+                
+                  
+                  <input style="width:350px margin"  type="number" class="form-control" id="carprice" placeholder="price" aria-describedby="emailHelp">
+                  
+                 
+                  <input style="width:350px margin"  type="number" class="form-control" id="key" placeholder="key" aria-describedby="emailHelp">
+                  
+            <button type="button" id="store" style="margin-top: 5px;" onclick="strdata()" class="btn btn-outline-success">store record</button>
+        </div>
+        <div style="color: rgb(0, 174, 255);width: 200px; height: 300px; border: 2px solid black; text-align: center;">
+            <h3>enter key to retrieve item</h3>
+               
+            
+            <input style="width:350px margin"  type="number" class="form-control" id="srch" placeholder="key" aria-describedby="emailHelp">
+            
+      <button type="button" id="search" style="margin-top: 5px;" onclick="search()" class="btn btn-outline-success">retrieve record</button>
+      <div id="result"></div>
+        </div>
+        <div style="color: rgb(0, 174, 255);width: 200px; height: 300px; border: 2px solid black;text-align: center;">
+            <h3>enter keey to delete item</h3>
+            
+            <input style="width:350px margin"  type="number" class="form-control" id="delet" placeholder="key" aria-describedby="emailHelp">
+            
+            
+      <button type="button" id="delete" style="margin-top: 5px;" onclick="del()" class="btn btn-outline-success">remove record</button>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <button style="width:1000px" type="button" id="rem" onclick="remove()" class="btn btn-outline-dark">clear all records</button>
+    </div>
+    <script src="./style.js"></script>
+</body>
+</html>
